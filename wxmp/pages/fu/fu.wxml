@@ -1,0 +1,91 @@
+<!--pages/fu/fu.wxml-->
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">特殊</view>
+  </view>
+  <view class="tr">
+      <view class="td">符底</view>
+      <view class="td">=20符</view>
+  </view>
+  <view class="tr">
+      <view class="td">七对子</view>
+      <view class="td">=25符</view>
+  </view>
+  <view class="tr">
+      <view class="td">门清平和自摸</view>
+      <view class="td">=20符</view>
+  </view>
+  <view class="tr">
+      <view class="td">副露平和（20符）</view>
+      <view class="td">=30符</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr">
+    <view class="th">听牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">门清荣和</view>
+      <view class="td">+10符</view>
+  </view>
+  <view class="tr">
+      <view class="td">自摸</view>
+      <view class="td">+2符</view>
+  </view>
+  <view class="tr">
+      <view class="td">嵌张/边张/单吊</view>
+      <view class="td">+2符</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr">
+    <view class="th">雀头</view>
+  </view>
+  <view class="tr">
+      <view class="td">自风/场风/三元</view>
+      <view class="td">+2符</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">面子</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">牌型</view>
+      <view class="td">中张</view>
+      <view class="td">幺九</view>
+  </view>
+  <view class="tr">
+      <view class="td">明刻</view>
+      <view class="td">+2符</view>
+      <view class="td">+4符</view>
+  </view>
+  <view class="tr">
+      <view class="td">暗刻</view>
+      <view class="td">+4符</view>
+      <view class="td">+8符</view>
+  </view>
+  <view class="tr">
+      <view class="td">明杠</view>
+      <view class="td">+8符</view>
+      <view class="td">+16符</view>
+  </view>
+  <view class="tr">
+      <view class="td">暗杠</view>
+      <view class="td">+16符</view>
+      <view class="td">+32符</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">备注</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">符数合计之后，个位0舍1入（例如：合计22符，则进位到30符）</view>
+  </view>
+</view>

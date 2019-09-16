@@ -1,0 +1,54 @@
+@import 'style/weui.wxss';
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.table {
+  border: 0px solid darkgray;
+}
+.tr { /* 行 */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td { /* 单元格：内容 */
+    border: 1px solid darkgray;
+    width:50%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th { /* 单元格：表头 */
+  border: 1px solid darkgray;
+  width: 100%;
+  height: 100%;
+  background: #3366FF;
+  color: #fff;
+  
+  height: 3rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}

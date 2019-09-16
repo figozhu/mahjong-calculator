@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fu/fu",
+    "pages/fan/fan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index.png",
+        "text": "算分"
+      },
+      {
+        "pagePath": "pages/fu/fu",
+        "iconPath": "images/fu.png",
+        "text": "算符"
+      },
+      {
+        "pagePath": "pages/fan/fan",
+        "iconPath": "images/fan.png",
+        "text": "役种"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

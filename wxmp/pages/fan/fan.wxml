@@ -1,0 +1,261 @@
+<!--pages/fan/fan.wxml-->
+
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">1番役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">立直</view>
+      <view class="td">必须门清</view>
+  </view>
+  <view class="tr">
+      <view class="td">一發</view>
+      <view class="td">立直後，一巡内和牌（中途無人吃碰槓）</view>
+  </view>
+  <view class="tr">
+      <view class="td">门清自摸</view>
+      <view class="td">必须门清</view>
+  </view>
+  <view class="tr">
+      <view class="td">平和</view>
+      <view class="td">順子=4，兩面聽，雀頭不是役牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">一盃口</view>
+      <view class="td">完全相同順子=2</view>
+  </view>
+  <view class="tr">
+      <view class="td">斷幺九</view>
+      <view class="td">幺九牌=0</view>
+  </view>
+  <view class="tr">
+      <view class="td">役牌</view>
+      <view class="td">自风/场风/三元的刻子或杠子</view>
+  </view>
+  <view class="tr">
+      <view class="td">河底撈魚</view>
+      <view class="td">和最后一张打出的牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">嶺上開花</view>
+      <view class="td">槓後補牌時自摸</view>
+  </view>
+  <view class="tr">
+      <view class="td">槍槓</view>
+      <view class="td">和加槓的牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">海底摸月</view>
+      <view class="td">自摸最後一張牌</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">2番役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">三色同順</view>
+      <view class="td">3 種花色同一順子（非门清算1番）</view>
+  </view>
+  <view class="tr">
+      <view class="td">一氣通貫</view>
+      <view class="td">同花色的1~9 三組順子（非门清算1番）</view>
+  </view>
+  <view class="tr">
+      <view class="td">混全帶幺九</view>
+      <view class="td">（非门清算1番）【注1】</view>
+  </view>
+  <view class="tr">
+      <view class="td">七對子</view>
+      <view class="td">必须门清</view>
+  </view>
+  <view class="tr">
+      <view class="td">兩立直</view>
+      <view class="td">必须门清【注2】</view>
+  </view>
+  <view class="tr">
+      <view class="td">對對和</view>
+      <view class="td">全是刻子、槓子</view>
+  </view>
+  <view class="tr">
+      <view class="td">三暗刻</view>
+      <view class="td">暗刻+暗槓=3</view>
+  </view>
+  <view class="tr">
+      <view class="td">三槓子</view>
+      <view class="td">三组槓子</view>
+  </view>
+  <view class="tr">
+      <view class="td">三色同刻</view>
+      <view class="td">3 组同一数字的刻子（或槓子）</view>
+  </view>
+  <view class="tr">
+      <view class="td">混老頭</view>
+      <view class="td">幺九牌组成的七对子或对对和</view>
+  </view>
+  <view class="tr">
+      <view class="td">小三元</view>
+      <view class="td">三元牌刻子或杠子=2 + 三元牌雀頭</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">3番役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">混一色</view>
+      <view class="td">同花色的牌+字牌（非门清算2番）</view>
+  </view>
+  <view class="tr">
+      <view class="td">純全帶幺九</view>
+      <view class="td">【注3】（非门清算2番）</view>
+  </view>
+    <view class="tr">
+      <view class="td">二盃口</view>
+      <view class="td">2 組一盃口，必须门清</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">满贯役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">流局滿貫</view>
+      <view class="td">【注4】</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">6番役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">清一色</view>
+      <view class="td">全是花色相同的牌（非门清算5番）</view>
+  </view>
+</view>
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">役满役</view>
+  </view>
+  <view class="tr bg-g">
+      <view class="td">名称</view>
+      <view class="td">限制</view>
+  </view>
+  <view class="tr">
+      <view class="td">國士無雙</view>
+      <view class="td">必须门清【注5】</view>
+  </view>
+  <view class="tr">
+      <view class="td">國士無雙13 面</view>
+      <view class="td">必须门清【注6】</view>
+  </view>
+  <view class="tr">
+      <view class="td">四暗刻單騎</view>
+      <view class="td">必须门清，对对和（听单骑）</view>
+  </view>
+  <view class="tr">
+      <view class="td">九蓮寶燈</view>
+      <view class="td">必须门清【注7】</view>
+  </view>
+  <view class="tr">
+      <view class="td">純正九蓮寶燈</view>
+      <view class="td">必须门清【注8】</view>
+  </view>
+  <view class="tr">
+      <view class="td">天和</view>
+      <view class="td">必须门清，親家配牌時和牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">地和</view>
+      <view class="td">必须门清，子家首次摸牌自摸【注9】</view>
+  </view>
+  <view class="tr">
+      <view class="td">四槓子</view>
+      <view class="td">四组杠子</view>
+  </view>
+  <view class="tr">
+      <view class="td">大三元</view>
+      <view class="td">三组三元牌刻子（或杠子）</view>
+  </view>
+  <view class="tr">
+      <view class="td">小四喜</view>
+      <view class="td">三组风牌刻子（或杠子），另一组是对子</view>
+  </view>
+  <view class="tr">
+      <view class="td">大四喜</view>
+      <view class="td">四组风牌刻子（或杠子）</view>
+  </view>
+  <view class="tr">
+      <view class="td">字一色</view>
+      <view class="td">字牌组成的七对子或对对和</view>
+  </view>
+  <view class="tr">
+      <view class="td">綠一色</view>
+      <view class="td">由2、3、4、6、8索和發组成的和牌</view>
+  </view>
+  <view class="tr">
+      <view class="td">清老頭</view>
+      <view class="td">由 1/9 万、索、饼组成的对对和</view>
+  </view>
+</view>
+
+
+
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">备注</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注1】面子，对子都帶幺九牌（必须有字牌，可以是七对子，不能有对对和）</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注2】首次出牌，就立直（立直前無人吃碰槓）</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注3】所有面子，对子都帶幺九牌.（不能有对对和）</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注4】部分规则不设该役种，流局前打出的牌全是幺九牌，所有牌不被他人吃碰槓</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注5】幺九對子=1，幺九種類=12，聽沒有的幺九牌</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注6】幺九種類=13，聽任意幺九牌</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注7】带有1112345678999 的清一色（非9 面聽）</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注8】由1112345678999 組成，9 面聽清一色</view>
+  </view>
+  <view class="tr">
+      <view class="td" style="width: 100%">【注9】子家首次摸牌自摸（這之前無人吃碰槓）</view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view>
+      
+  <view class="section" style="margin: 18rpx 5rpx">
+    <view class="section__title">符：{{iCurrFuNum}} </view>
+    <radio-group class="radio-group" bindchange="fuChange">
+      <label class="radio" wx:for="{{fuItems}}">
+        {{item.name}} <radio value="{{item.value}}" checked="{{item.checked}}"/>
+      </label>
+    </radio-group>
+
+    <navigator url="/pages/fu/fu" open-type="switchTab" hover-class="other-navigator-hover">【点击查看】如何算符？</navigator>
+  </view>
+
+  <view class="section" style="margin: 18rpx 5rpx">
+    <view class="section__title">番：{{iCurrFanNum}}</view>
+    <radio-group class="radio-group" bindchange="fanChange">
+      <label class="radio"  wx:for="{{fanItems}}">
+        {{item.name}} <radio value="{{item.value}}" checked="{{item.checked}}"/>
+      </label>
+    </radio-group>
+
+    <navigator url="/pages/fan/fan" open-type="switchTab" hover-class="other-navigator-hover">【点击查看】有哪些役种？</navigator>
+  </view>
+
+  <view class="section" style="margin: 18rpx 5rpx">
+    <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+      <view class="flex-item">親家：</view>
+      <view class="flex-item">自摸，每家：{{iDealerZM}}</view>
+      <view class="flex-item">荣：{{iDealerCHONG}}</view>
+      
+      <view class="flex-item">-----------------------------------</view>
+
+      <view class="flex-item">子家：</view>
+      <view class="flex-item">自摸，親家：{{iOhterZM_Dealer}}， 其他每家：{{iOhterZM_Other}}</view>
+      <view class="flex-item">荣：{{iOhterCHONG}}</view>
+    </view>
+  </view>
+
+</view>
