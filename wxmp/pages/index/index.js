@@ -191,4 +191,14 @@ Page({
 
     this.calcWinningPoints();
   },
+
+  adLoad() {
+    console.log('Banner 广告加载成功')
+  },
+  adError(err) {
+    console.log('Banner 广告加载失败', err)
+  },
+  adClose() {
+    console.log('Banner 广告关闭')
+  }
 })
