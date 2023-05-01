@@ -1,0 +1,44 @@
+<!--pages/pt/pt.wxml-->
+
+<view class="ptMain">
+<view class="topDefault">
+  <view class="oneLine">
+    <text>初始点棒：</text> <input type="number" value="{{initPoint}}" />
+  </view>
+  <view class="oneLine">
+    <text>返点：</text> <input type="number" value="{{returnPoint}}" />
+  </view>
+  <view class="oneLine">
+    <text>顺位马1：</text> <input type="number" value="{{orderExtra1}}" />
+  </view>
+  <view class="oneLine">
+    <text>顺位马2：</text> <input type="number" value="{{orderExtra2}}" />
+  </view>
+</view>
+
+
+<view class="middleCalc">
+  <view class="oneLine">
+    <text>第一名得点：</text> <input bindinput="onPlayer1PointChange" type="number" placeholder="点此输入该玩家点棒数"/> <text>最终得分：{{player1Score}}</text>
+  </view>
+  <view class="oneLine">
+    <text>第二名得点：</text> <input bindinput="onPlayer2PointChange" type="number" placeholder="点此输入该玩家点棒数"/> <text>最终得分：{{player2Score}}</text>
+  </view>
+  <view class="oneLine">
+    <text>第三名得点：</text> <input bindinput="onPlayer3PointChange" type="number" placeholder="点此输入该玩家点棒数"/> <text>最终得分：{{player3Score}}</text>
+  </view>
+  <view class="oneLine">
+    <text>第四名得点：</text> <input bindinput="onPlayer4PointChange" type="number" placeholder="点此输入该玩家点棒数"/> <text>最终得分：{{player4Score}}</text>
+  </view>
+
+  <view class="calcBtn">
+    <button type="primary" bindtap="onCalcScore">计算最终得分</button>
+  </view>
+</view>
+
+<view class="bottomAD">
+  <!-- 广告 -->
+  <view class="flex-item"><ad unit-id="adunit-c9024af35fd3030a" bindload="adLoad" binderror="adError" bindclose="adClose"></ad></view>
+</view>
+
+</view>

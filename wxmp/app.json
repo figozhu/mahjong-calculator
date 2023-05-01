@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/fu/fu",
-    "pages/fan/fan"
+    "pages/fan/fan",
+    "pages/pt/pt"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,8 +16,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "images/dian.png",
+        "text": "得点"
+      },
+      {
+        "pagePath": "pages/pt/pt",
         "iconPath": "images/index.png",
-        "text": "算分"
+        "text": "总分"
       },
       {
         "pagePath": "pages/fu/fu",

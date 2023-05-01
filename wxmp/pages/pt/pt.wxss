@@ -1,0 +1,58 @@
+/* pages/pt/pt.wxss */
+
+.ptMain {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.topDefault {
+  width:100%;
+  height:25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+}
+
+.middleCalc {
+  width:100%;
+  height:55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomAD {
+  width:100%;
+  height:20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneLine {
+  width:100%;
+  height:10%;
+  display: flex;
+  flex-direction: row;
+  color: red;
+  font-weight: bold;
+}
+
+.calcBtn {
+  width:100%;
+  height:10%;
+  display: flex;
+  flex-direction: row;
+}
